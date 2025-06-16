@@ -1,3 +1,8 @@
+## 🚀 Try It Live
+
+🔗 [MedScanAI – Live Site](https://medscanai.netlify.app/)
+
+
 # 🩺 MedScan – AI-Powered Medical Image Segmentation
 
 An AI-powered web application that allows users to upload medical images (e.g., X-rays) and receive automated segmentation and classification results using deep learning.
