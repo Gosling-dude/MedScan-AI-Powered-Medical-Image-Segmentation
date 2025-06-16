@@ -1,0 +1,119 @@
+/* ==== reportStyle.css ==== */
+.report-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  color: #fff;
+}
+
+.report-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.report-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.report-details p {
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffd700, #ffffff, #ffb300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.no-fracture {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.fracture {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.heatmap-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.heatmap {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffc107;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.neon-btn {
+  background: #1f1f1f;
+  color: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff inset;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff inset;
+}
+
+.golden-btn {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: #1f1f1f;
+}
+
+.golden-btn:hover {
+  background: linear-gradient(135deg, #ffb300, #ffc107);
+  transform: scale(1.05);
+}
+
+.lottie-wrapper {
+  max-width: 150px;
+  margin: 0 auto 2rem;
+}
+
+.lottie-animation {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

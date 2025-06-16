@@ -1,0 +1,180 @@
+/* Classic Background with gradient */
+.classic-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  padding: 2rem;
+  width: 100%;
+  max-width: 950px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Animation: Slide In */
+.slide-in {
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation: Fade In */
+.fade-in {
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Form Input Styling */
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.neon-btn {
+  background: #f8b500;
+  color: #000;
+  box-shadow: 0 0 10px #f8b500, 0 0 20px #fceabb;
+}
+
+.neon-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #f8b500, 0 0 30px #fceabb;
+}
+
+.golden-btn {
+  background: linear-gradient(45deg, #f9d423, #ff4e50);
+  color: white;
+}
+
+/* Image Preview */
+.image-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.placeholder-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+/* Report Specific Styling */
+.report-card {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  max-width: 900px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  animation: slideIn 0.7s ease;
+}
+
+.heatmap {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 2px solid #fceabb;
+}
+
+.back-btn {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #f8b500;
+  color: #f8b500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #f8b500;
+  color: #000;
+  transform: scale(1.05);
+}

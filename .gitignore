@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.h5
+uploads/
+*.jar
+*.log

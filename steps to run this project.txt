@@ -1,0 +1,71 @@
+===============================================================
+     ✅ HOW TO RUN THE FLASK BACKEND PROJECT FROM SCRATCH
+===============================================================
+
+📁 Project Structure Assumed:
+---------------------------------------------------------------
+MedScan- Medical Image Segmentation/
+│
+├── backend/
+│   ├── app.py
+│   └── requirements.txt  (optional)
+
+===============================================================
+🔹 STEP 1: Open Terminal in the backend folder
+---------------------------------------------------------------
+Open PowerShell or VS Code terminal and run:
+
+cd "D:\MedScan- Medical Image Segmentation\backend"
+
+===============================================================
+🔹 STEP 2: Create a Virtual Environment (if not done already)
+---------------------------------------------------------------
+python -m venv venv
+
+(This will create a new folder named "venv" inside backend)
+
+===============================================================
+🔹 STEP 3: Activate the Virtual Environment
+---------------------------------------------------------------
+.\venv\Scripts\Activate.ps1
+
+After this, you should see:
+(venv) PS D:\MedScan- Medical Image Segmentation\backend>
+
+===============================================================
+🔹 STEP 4: Install Required Python Packages
+---------------------------------------------------------------
+For basic Flask backend:
+
+pip install flask flask-cors
+
+Or if you have a requirements file:
+
+pip install -r requirements.txt
+
+===============================================================
+🔹 STEP 5: Run the Flask App
+---------------------------------------------------------------
+python app.py
+
+If everything is set up, you'll see:
+
+ * Running on http://127.0.0.1:5000/
+
+===============================================================
+🔁 DAILY USAGE (Whenever you restart)
+---------------------------------------------------------------
+1. Open terminal in backend folder
+2. Activate venv:
+   .\venv\Scripts\Activate.ps1
+3. Run the app:
+   python app.py
+
+===============================================================
+📝 TIP: Update pip (optional)
+---------------------------------------------------------------
+python -m pip install --upgrade pip
+
+===============================================================
+✅ DONE! Your Flask API server should now be running.
+===============================================================
