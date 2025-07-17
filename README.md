@@ -71,6 +71,9 @@ MIT License. Feel free to use, extend, or contribute.
 
 ### 🙋‍♂️ Author  
 **Sumit Chauhan**  
+
+---
+### Connet with me:
 💼 [LinkedIn](https://www.linkedin.com/in/sumit-chauhan-006399257/)
 
 
