@@ -16,8 +16,8 @@ export default function BoneFractureDetection() {
   };
 
   const handleSubmit = async () => {
-    if (!image || !name || !age) {
-      alert("Please fill in all fields");
+    if (!image || !name || age === "" || Number(age) < 0) {
+      alert("Please fill in all fields with valid data. Age must be non-negative.");
       return;
     }
 
@@ -42,7 +42,9 @@ export default function BoneFractureDetection() {
   return (
     <div className="container classic-bg">
       <div className="card glass-effect slide-in">
-        <h2 className="title gradient-text">🦴 MedScan: AI Powered Medical Image Segmentation</h2>
+        <h2 className="title gradient-text">
+          🦴 MedScan: AI Powered Medical Image Segmentation
+        </h2>
         <div className="form-container">
           <div className="form">
             <div className="input-group">
@@ -60,6 +62,7 @@ export default function BoneFractureDetection() {
               <input
                 id="age"
                 type="number"
+                min="0"
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
                 className="input"
